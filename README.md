@@ -9,8 +9,8 @@ dotnet test
 The tests can also be ran in the root directory but it will build both the main and test projects, which is unnecessary.
 
 ## Helpful Links
-[.NET Core Unit Testing with xUnit](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test)
-[Testing API controllers](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-2.1)
+- [.NET Core Unit Testing with xUnit](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test)
+- [Testing API controllers](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-2.1)
 
 ## Adding Tests from Scratch
 1. Create a new directory to house the testing project
