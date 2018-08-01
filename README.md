@@ -3,10 +3,8 @@
 To run the unit tests:
 ```
 dotnet restore
-cd RandomServiceTests
-dotnet test
+dotnet test RandomServiceTests
 ```
-The tests can also be ran in the root directory but it will build both the main and test projects, which is unnecessary.
 
 ## Helpful Links
 - [.NET Core Unit Testing with xUnit](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test)
@@ -25,3 +23,4 @@ The tests can also be ran in the root directory but it will build both the main 
 - I had to mirror a dependency in the test’s csproj file because the test file would not recognize the `controller.Get()` call due to it not recognizing the ActionResult type from the controller.
 - It’s good practice to define the controller in the constructor if you are going to be using the controller a lot in the tests.
 - I have not used Moq yet, but it seems like it would come in handy.
+- Running simply `dotnet test` in the root of the project will try to run tests in both projects (main and test). This will result in the first build failing. Use the test command above to run the unit tests.
