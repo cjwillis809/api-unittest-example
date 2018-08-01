@@ -23,4 +23,4 @@ dotnet test RandomServiceTests
 - I had to mirror a dependency in the test’s csproj file because the test file would not recognize the `controller.Get()` call due to it not recognizing the ActionResult type from the controller.
 - It’s good practice to define the controller in the constructor if you are going to be using the controller a lot in the tests.
 - I have not used Moq yet, but it seems like it would come in handy.
-- Running simply `dotnet test` in the root of the project will try to run tests in both projects (main and test). This will result in the first build failing. Use the test command above to run the unit tests.
+- Running simply `dotnet test` in the root of the project will try to run tests in both projects (main and test). This will result in the first build failing. Use the test command above to run the unit tests. This issue on github is about that, it seems a fix might be coming: https://github.com/Microsoft/vstest/issues/1129
